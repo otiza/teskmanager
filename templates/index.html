@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager - Projet TRBIB1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Task Manager (Prototype)</h1>
+      <p class="subtitle">Mini application Python + HTML/CSS/JS pour votre sujet prospectif.</p>
+
+      <form id="task-form">
+        <input id="title" type="text" placeholder="Titre de la tâche" required />
+        <textarea id="description" rows="3" placeholder="Description (optionnelle)"></textarea>
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <section>
+        <h2>Mes tâches</h2>
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

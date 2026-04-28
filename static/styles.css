@@ -1,0 +1,45 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color-scheme: light;
+}
+body {
+  margin: 0;
+  background: #f4f6fa;
+  color: #1f2937;
+}
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.subtitle { color: #4b5563; }
+form { display: grid; gap: .8rem; margin-bottom: 2rem; }
+input, textarea, button {
+  font: inherit;
+  padding: .7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ul { list-style: none; padding: 0; display: grid; gap: .8rem; }
+li {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.task-title.done { text-decoration: line-through; color: #6b7280; }
+.actions { display: flex; gap: .5rem; }
+.btn-danger { background: #dc2626; }
+.btn-secondary { background: #6b7280; }
