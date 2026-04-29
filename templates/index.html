@@ -8,13 +8,21 @@
   </head>
   <body>
     <main class="container">
-      <h1>Task Manager (Prototype)</h1>
-      <p class="subtitle">Mini application Python + HTML/CSS/JS pour votre sujet prospectif.</p>
+      <header class="header">
+        <h1>Task Manager</h1>
+        <p class="subtitle">Suivi clair des tâches, responsables et dates limites.</p>
+      </header>
 
-      <form id="task-form">
-        <input id="title" type="text" placeholder="Titre de la tâche" required />
+      <form id="task-form" class="card">
+        <div class="grid-2">
+          <input id="title" type="text" placeholder="Titre de la tâche" required />
+          <input id="assigned_to" type="text" placeholder="Attribuée à (ex: Alice)" />
+        </div>
         <textarea id="description" rows="3" placeholder="Description (optionnelle)"></textarea>
-        <button type="submit">Ajouter</button>
+        <div class="grid-2">
+          <input id="deadline" type="date" />
+          <button type="submit">Ajouter la tâche</button>
+        </div>
       </form>
 
       <section>
