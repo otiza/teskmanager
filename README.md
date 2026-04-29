@@ -19,3 +19,11 @@ Ce prototype vous permet d'illustrer dans votre rapport :
 - la numérisation d'un métier via un outil simple ;
 - l'ajout futur d'IA (priorisation auto des tâches), analytics, assistants conversationnels ;
 - une base de discussion sur les compétences (Python, intégration API, UX, gouvernance des données).
+
+
+## Nouvelles fonctionnalités
+
+- Attribution des tâches à une personne (`assigned_to`).
+- Date limite (`deadline`) avec validation de format `AAAA-MM-JJ`.
+- Mise en évidence visuelle des tâches en retard.
+- Interface modernisée (cartes, badges de statut, responsive).
